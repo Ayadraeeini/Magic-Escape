@@ -1,14 +1,9 @@
 fileFormatVersion: 2
-guid: ac773e2f6b4acf641b197c837dba1b49
+guid: acc3df6c6f167414a9ff897ccd98a687
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Lever1
-    second: {fileID: 2100000, guid: 3cba0b5e030b10043a522f79b116f8b4, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -73,7 +68,7 @@ ModelImporter:
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
