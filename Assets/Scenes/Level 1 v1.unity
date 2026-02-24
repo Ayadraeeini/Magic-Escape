@@ -25827,6 +25827,12 @@ MonoBehaviour:
   uiTrail: {fileID: 843379882}
   minSwipeDistance: 80
   showComboSeconds: 5
+  maxAttempts: 3
+  damageOnFail: 0
+  playerMovementScript: {fileID: 2000776790}
+  cameraToShake: {fileID: 2078954254}
+  shakeDuration: 0.18
+  shakeStrength: 0.12
 --- !u!4 &2031602703
 Transform:
   m_ObjectHideFlags: 0
@@ -26379,6 +26385,11 @@ MeshFilter:
 --- !u!20 &2078954253 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4372672901241960239, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
+  m_PrefabInstance: {fileID: 1090559847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2078954254 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1505518311225404076, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
   m_PrefabInstance: {fileID: 1090559847}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &2088236042
