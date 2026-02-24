@@ -14242,7 +14242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46f83cfb618214c4fbec6bc7c635d43c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyMiniGameTrigger
-  comboLength: 4
+  comboLength: 3
   damageOnFail: 10
 --- !u!65 &885654449
 BoxCollider:
@@ -15361,7 +15361,7 @@ RectTransform:
   m_GameObject: {fileID: 967679778}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6570951, y: 1.414056, z: 1.873004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 415926644}
@@ -15369,7 +15369,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 160, y: 2.2000122}
+  m_AnchoredPosition: {x: 337, y: 23.5}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &967679780
@@ -15395,7 +15395,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.16234244, g: 0.39664236, b: 0.5698112, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -15441,7 +15441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.22297612, g: 0.40127218, b: 0.5396226, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -16728,10 +16728,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7873137729073437365, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2000776797}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
 --- !u!1 &1095826567
 GameObject:
@@ -17908,7 +17905,7 @@ RectTransform:
   m_GameObject: {fileID: 1216498033}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6570951, y: 1.414056, z: 1.873004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1078600207}
@@ -17916,7 +17913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0.099975586, y: 3.4000244}
+  m_AnchoredPosition: {x: 53, y: 24.700073}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1216498035
@@ -17942,7 +17939,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.16234244, g: 0.39664236, b: 0.5698112, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -17988,7 +17985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.22297612, g: 0.40127218, b: 0.5396226, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -24546,11 +24543,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1915288325}
   m_Mesh: {fileID: -1703100848769406757, guid: b0c7acd1656187b43a1327444e72c07b, type: 3}
---- !u!1 &1921270536 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7873137729073437365, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
-  m_PrefabInstance: {fileID: 1090559847}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1924679150
 GameObject:
   m_ObjectHideFlags: 0
@@ -24936,7 +24928,7 @@ RectTransform:
   m_GameObject: {fileID: 1928699367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.6570951, y: 1.414056, z: 1.873004}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 686198860}
@@ -24944,7 +24936,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 63.5, y: 33.8}
+  m_AnchoredPosition: {x: 194, y: 81.1}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &1928699369
@@ -24983,7 +24975,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_PressedColor: {r: 0.16234244, g: 0.39664236, b: 0.5698112, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -25029,7 +25021,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.22297612, g: 0.40127218, b: 0.5396226, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -25593,26 +25585,12 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3515986644512405878, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
   m_PrefabInstance: {fileID: 1090559847}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921270536}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 78cc7057625957a40b40debb6b5105b8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
---- !u!114 &2000776797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1921270536}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89b519da039e7ad42980719f312ccbd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LeverInteractable
-  interactButtonObject: {fileID: 0}
-  interactButton: {fileID: 0}
 --- !u!1 &2005549655
 GameObject:
   m_ObjectHideFlags: 0

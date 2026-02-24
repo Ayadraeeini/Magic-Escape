@@ -61,7 +61,23 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\scripts\Direction.cs" />
+    <Compile Include="Assets\scripts\CombatManager.cs" />
+    <Compile Include="Assets\scripts\MobileFirstPerson.cs" />
+    <Compile Include="Assets\scripts\SwipeMiniGameManager.cs" />
+    <Compile Include="Assets\scripts\CombatEncounter.cs" />
+    <Compile Include="Assets\scripts\LeverInteractor.cs" />
+    <Compile Include="Assets\scripts\UIDrawTrail.cs" />
+    <Compile Include="Assets\scripts\LeverInteractable.cs" />
+    <Compile Include="Assets\scripts\SwipeTrailDrawer.cs" />
+    <Compile Include="Assets\scripts\CombatSequenceUI.cs" />
+    <Compile Include="Assets\scripts\MainMenu.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\EnemyMiniGameTrigger.cs" />
+    <Compile Include="Assets\scripts\DoorController.cs" />
+    <Compile Include="Assets\scripts\SwipeInput.cs" />
+    <Compile Include="Assets\scripts\HoldButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
