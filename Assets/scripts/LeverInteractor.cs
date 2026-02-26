@@ -8,19 +8,19 @@ public class LeverInteractor : MonoBehaviour
     public Button interactButton;
 
     private LeverInteractable lever;
-    private bool playerInside = false;
+    private bool playerInside;
+
+    private static LeverInteractor activeLever;
+
+    void Awake()
+    {
+        lever = GetComponent<LeverInteractable>();
+    }
 
     void Start()
     {
-        lever = GetComponent<LeverInteractable>();
-        interactButtonObject.SetActive(false);
-        interactButton.onClick.AddListener(OnButtonClick);
-    }
-
-    void OnButtonClick()
-    {
-        if (playerInside && lever != null)
-            lever.Interact();
+        if (interactButtonObject != null)
+            interactButtonObject.SetActive(false);
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,7 +28,19 @@ public class LeverInteractor : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         playerInside = true;
+        activeLever = this;
+
         interactButtonObject.SetActive(true);
+        interactButton.onClick.RemoveAllListeners();
+        interactButton.onClick.AddListener(OnButtonClick);
+    }
+
+    void OnButtonClick()
+    {
+        if (activeLever == this && playerInside && lever != null)
+        {
+            lever.Interact();
+        }
     }
 
     void OnTriggerExit(Collider other)
@@ -36,6 +48,12 @@ public class LeverInteractor : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         playerInside = false;
-        interactButtonObject.SetActive(false);
+
+        if (activeLever == this)
+        {
+            activeLever = null;
+            interactButton.onClick.RemoveAllListeners();
+            interactButtonObject.SetActive(false);
+        }
     }
 }

@@ -4,6 +4,7 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+<<<<<<< HEAD
 [Uu]serSettings/
 [Bb]ee/
 .DS_Store
@@ -13,3 +14,6 @@ Thumbs.db
 *.aab
 *.apk
 *.so
+=======
+UserSettings/
+>>>>>>> Marisa

@@ -6,15 +6,16 @@ public class LeverInteractable : MonoBehaviour
     public float targetZRotation = -40f;
     public float rotateSpeed = 8f;
     public DoorController door;
+
     private bool activated = false;
 
     public void Interact()
     {
         if (activated) return;
-        activated = true;
+        if (door == null) return;
 
-        if (door != null)
-            door.OpenDoor();
+        activated = true;
+        door.OpenDoor();
     }
 
     void Update()
