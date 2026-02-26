@@ -25831,8 +25831,8 @@ MonoBehaviour:
   damageOnFail: 0
   playerMovementScript: {fileID: 2000776790}
   cameraToShake: {fileID: 2078954254}
-  shakeDuration: 0.18
-  shakeStrength: 0.12
+  shakeDuration: 0.34
+  shakeStrength: 0.36
 --- !u!4 &2031602703
 Transform:
   m_ObjectHideFlags: 0
