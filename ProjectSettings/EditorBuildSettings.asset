@@ -9,11 +9,17 @@ EditorBuildSettings:
     path: Assets/Scenes/Text.unity
     guid: 1a5d2d70f55054bfc9cc492bbc933546
   - enabled: 1
+    path: Assets/Scenes/Level 1 v1.unity
+    guid: e7cf23820bed5479194c137c14d418c8
+  - enabled: 0
     path: Assets/Scenes/jesse.unity
     guid: 71e8af869ae121c49976e81aac43a8fa
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/UI/MainMenu.unity
+    guid: 4e3b7bbaf455043ea8c4d46854ef492e
   m_configObjects:
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 65a89630f80f044ae9999980a796f720, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
