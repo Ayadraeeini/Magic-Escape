@@ -4,6 +4,18 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
-  m_configObjects: {}
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 319f15d58a812634b9ffa452198cca5a
+  - enabled: 1
+    path: Assets/Scenes/Level 1 v1.unity
+    guid: e7cf23820bed5479194c137c14d418c8
+  - enabled: 1
+    path: Assets/Scenes/WinScreen.unity
+    guid: 76bcc3378b8490140b9eca266e57cbdd
+  m_configObjects:
+    com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: dfcc756565e922f42a52a1055286ff23, type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5c67685d7cb1f8247b17046384a5a47f, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 060bc1705cb34419fba4ac079fd91de5, type: 2}
   m_UseUCBPForAssetBundles: 0

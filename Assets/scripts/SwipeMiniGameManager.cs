@@ -274,9 +274,9 @@ public class SwipeMiniGameManager : MonoBehaviour
         }
 
         if (cachedMovement != null)
-             cachedMovement.enabled = true;
+            cachedMovement.enabled = true;
 
-              cachedMovement = null;
+        cachedMovement = null;
     }
 
     void ShakeScreen()
@@ -296,7 +296,7 @@ public class SwipeMiniGameManager : MonoBehaviour
         while (t > 0f)
         {
             Vector2 r = Random.insideUnitCircle * shakeStrength;
-              cameraToShake.localPosition = camStartLocalPos + new Vector3(r.x, r.y, 0f);
+            cameraToShake.localPosition = camStartLocalPos + new Vector3(r.x, r.y, 0f);
 
             t -= Time.unscaledDeltaTime;
 
@@ -337,13 +337,13 @@ public class SwipeMiniGameManager : MonoBehaviour
     string DirectionToArrow(Direction d)
     {
         if (d == Direction.Up)
-            return "UP";
+            return "↑";
         if (d == Direction.Down)
-            return "DOWN";
+            return "↓";
         if (d == Direction.Left)
-            return "LEFT";
+            return "←";
         if (d == Direction.Right)
-            return "RIGHT";
+            return "→";
         return "?";
     }
 }

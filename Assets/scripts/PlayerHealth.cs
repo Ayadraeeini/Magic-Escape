@@ -1,12 +1,10 @@
-//Eyad Al Raeeini - 02/10/2026
-//player health
-
-using System.Collections.Generic;
+//Eyad Al Raeeini - 02/17/2026
+//player health system
 using UnityEngine;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
-    private int currentHealth;
+    public int currentHealth;
 
     void Awake()
     {
@@ -16,8 +14,14 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage(int amount)
     {
         currentHealth -= amount;
-        if (currentHealth < 0) currentHealth = 0;
+        if (currentHealth < 0)
+            currentHealth = 0;
+    }
 
-        Debug.Log("Player HP: " + currentHealth);
+    public void Heal(int amount)
+    {
+        currentHealth += amount;
+        if (currentHealth > maxHealth)
+            currentHealth = maxHealth;
     }
 }
