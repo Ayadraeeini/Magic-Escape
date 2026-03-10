@@ -62,22 +62,33 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\scripts\PlayerHealth.cs" />
+    <Compile Include="Assets\scripts\MainMenuUI.cs" />
     <Compile Include="Assets\scripts\Direction.cs" />
     <Compile Include="Assets\scripts\CombatManager.cs" />
     <Compile Include="Assets\scripts\MobileFirstPerson.cs" />
+    <Compile Include="Assets\scripts\ObjectiveTriggerText.cs" />
     <Compile Include="Assets\scripts\SwipeMiniGameManager.cs" />
     <Compile Include="Assets\scripts\CombatEncounter.cs" />
     <Compile Include="Assets\scripts\LeverInteractor.cs" />
     <Compile Include="Assets\scripts\UIDrawTrail.cs" />
+    <Compile Include="Assets\scripts\ShopPanel.cs" />
     <Compile Include="Assets\scripts\LeverInteractable.cs" />
+    <Compile Include="Assets\scripts\ColorCycle.cs" />
     <Compile Include="Assets\scripts\SwipeTrailDrawer.cs" />
+    <Compile Include="Assets\scripts\PlayerShield.cs" />
     <Compile Include="Assets\scripts\CombatSequenceUI.cs" />
-    <Compile Include="Assets\scripts\MainMenu.cs" />
+    <Compile Include="Assets\scripts\ShopTrigger.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\Continue.cs" />
     <Compile Include="Assets\scripts\EnemyMiniGameTrigger.cs" />
+    <Compile Include="Assets\scripts\SceneTeleport.cs" />
     <Compile Include="Assets\scripts\DoorController.cs" />
     <Compile Include="Assets\scripts\SwipeInput.cs" />
+    <Compile Include="Assets\scripts\ShopUI.cs" />
+    <Compile Include="Assets\scripts\PlayerGold.cs" />
+    <Compile Include="Assets\scripts\TutorialPopupSequence.cs" />
     <Compile Include="Assets\scripts\HoldButton.cs" />
+    <Compile Include="Assets\scripts\WinScreenUI.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -1105,6 +1116,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
       <Private>False</Private>
@@ -1181,8 +1196,12 @@
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
-      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
+    <Reference Include="Unity.AdaptivePerformance.Google.Android.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Google.Android.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Simulator.Google.Extension.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Simulator.Google.Extension.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Runtime">
@@ -1203,6 +1222,10 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.Flow.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualScripting.Flow.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary">
+      <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Notifications">
@@ -1309,6 +1332,10 @@
       <HintPath>Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.AIIntegration.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.AIIntegration.Editor.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.RenderPipelines.Core.Editor.Shared">
       <HintPath>Library\ScriptAssemblies\Unity.RenderPipelines.Core.Editor.Shared.dll</HintPath>
       <Private>False</Private>
@@ -1327,6 +1354,10 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.AdaptivePerformance.Google.Android">
+      <HintPath>Library\ScriptAssemblies\Unity.AdaptivePerformance.Google.Android.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
