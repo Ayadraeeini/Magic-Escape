@@ -5868,7 +5868,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &278380478
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19112,12 +19112,12 @@ GameObject:
   - component: {fileID: 837795702}
   - component: {fileID: 837795701}
   m_Layer: 5
-  m_Name: Panel
+  m_Name: Game Over
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &837795700
 RectTransform:
   m_ObjectHideFlags: 0
