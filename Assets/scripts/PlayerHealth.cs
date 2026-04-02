@@ -1,7 +1,7 @@
 //Eyad Al Raeeini - 02/17/2026
 //player health system
 using UnityEngine;
-public class PlayerHealth : MonoBehaviour
+public class PlayerHealth: MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
