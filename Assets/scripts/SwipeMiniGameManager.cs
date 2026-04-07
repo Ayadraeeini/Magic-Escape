@@ -1,5 +1,6 @@
 ﻿//Eyad Al Raeeini - 02/17/2026
 //swipe minigame manager with retries and new combo
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,8 +21,13 @@ public class SwipeMiniGameManager : MonoBehaviour
     public int maxAttempts = 3;
     public int damageOnFail = 10;
     public MonoBehaviour playerMovementScript;
+    public Transform cameraToShake;
+    public float shakeDuration = 0.18f;
+    public float shakeStrength = 0.12f;
+
     private GameObject currentEnemy;
     private PlayerHealth playerHealth;
+    private HUDManager playerHUD;
     private List<Direction> combo;
     private List<Direction> playerInput;
     private bool inputEnabled;
@@ -31,11 +37,6 @@ public class SwipeMiniGameManager : MonoBehaviour
     private int damageOnFailCached;
     private MonoBehaviour cachedMovement;
     private Vector3 camStartLocalPos;
-    public Transform cameraToShake;
-    public float shakeDuration = 0.18f;
-    public float shakeStrength = 0.12f;
-
-
 
     void Awake()
     {
@@ -60,6 +61,10 @@ public class SwipeMiniGameManager : MonoBehaviour
         damageOnFailCached = damage;
 
         playerHealth = player.GetComponent<PlayerHealth>();
+
+        playerHUD = FindObjectOfType<HUDManager>();
+        if (playerHUD != null)
+            playerHUD.ShowHP();
 
         if (comboLength < 1)
             comboLength = 1;
@@ -157,6 +162,7 @@ public class SwipeMiniGameManager : MonoBehaviour
 
             Direction dir = GetDirection(delta);
             playerInput.Add(dir);
+
             if (playerInput.Count >= combo.Count)
             {
                 inputEnabled = false;
@@ -182,6 +188,7 @@ public class SwipeMiniGameManager : MonoBehaviour
         {
             if (resultText != null)
                 resultText.text = "SUCCESS";
+
             if (currentEnemy != null)
                 Destroy(currentEnemy);
 
@@ -248,6 +255,9 @@ public class SwipeMiniGameManager : MonoBehaviour
 
         UnfreezePlayer();
 
+        if (playerHUD != null)
+            playerHUD.HideHP();
+
         inputEnabled = false;
         miniGameRunning = false;
     }
@@ -290,6 +300,7 @@ public class SwipeMiniGameManager : MonoBehaviour
     {
         if (cameraToShake == null)
             yield break;
+
         camStartLocalPos = cameraToShake.localPosition;
 
         float t = shakeDuration;
@@ -299,7 +310,6 @@ public class SwipeMiniGameManager : MonoBehaviour
             cameraToShake.localPosition = camStartLocalPos + new Vector3(r.x, r.y, 0f);
 
             t -= Time.unscaledDeltaTime;
-
             yield return null;
         }
 
