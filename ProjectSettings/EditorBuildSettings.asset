@@ -11,21 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1 v1.unity
     guid: e7cf23820bed5479194c137c14d418c8
-<<<<<<< HEAD
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
     guid: 76bcc3378b8490140b9eca266e57cbdd
-=======
-  - enabled: 0
-    path: Assets/Scenes/jesse.unity
-    guid: 71e8af869ae121c49976e81aac43a8fa
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
-  - enabled: 1
-    path: Assets/UI/MainMenu.unity
-    guid: 4e3b7bbaf455043ea8c4d46854ef492e
->>>>>>> Marisa
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: dfcc756565e922f42a52a1055286ff23, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 5c67685d7cb1f8247b17046384a5a47f, type: 2}
