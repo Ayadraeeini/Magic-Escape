@@ -13,8 +13,6 @@ public class EnemyMiniGameTrigger : MonoBehaviour
         if (!other.CompareTag("Player")) return;
 
         triggered = true;
-        GetComponent<Collider>().enabled = false;
-
         SwipeMiniGameManager.Instance.StartMiniGame(gameObject, other.gameObject, comboLength, damageOnFail);
     }
 }
