@@ -61,6 +61,7 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.2.15f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\HUDManager.cs" />
     <Compile Include="Assets\scripts\PlayerHealth.cs" />
     <Compile Include="Assets\scripts\MainMenuUI.cs" />
     <Compile Include="Assets\scripts\Direction.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Assets\scripts\CombatEncounter.cs" />
     <Compile Include="Assets\scripts\LeverInteractor.cs" />
     <Compile Include="Assets\scripts\UIDrawTrail.cs" />
+    <Compile Include="Assets\scripts\ShopGlowArea.cs" />
     <Compile Include="Assets\scripts\ShopPanel.cs" />
     <Compile Include="Assets\scripts\LeverInteractable.cs" />
     <Compile Include="Assets\scripts\ColorCycle.cs" />
