@@ -7,12 +7,14 @@ public class LeverInteractable : MonoBehaviour
     public float targetZRotation = -40f;
     public float rotateSpeed = 8f;
     public DoorController door;
-
+    public Transform objectToRotate;
+    public Vector3 objectTargetRotation = new Vector3(0f, 90f, 0f);
+    public float objectRotateSpeed = 5f;
     public Camera doorCam;
     public float doorViewSeconds = 2f;
     public MonoBehaviour playerMovementScript;
-
     private bool activated = false;
+    private bool rotatingObject = false;
 
     public void Interact()
     {
@@ -20,6 +22,9 @@ public class LeverInteractable : MonoBehaviour
         activated = true;
 
         if (door == null) return;
+
+        if (objectToRotate != null)
+            rotatingObject = true;
 
         if (doorCam == null)
         {
@@ -63,5 +68,14 @@ public class LeverInteractable : MonoBehaviour
         Vector3 current = transform.localEulerAngles;
         float z = Mathf.LerpAngle(current.z, targetZRotation, Time.deltaTime * rotateSpeed);
         transform.localEulerAngles = new Vector3(current.x, current.y, z);
+
+        if (rotatingObject && objectToRotate != null)
+        {
+            Vector3 objCurrent = objectToRotate.localEulerAngles;
+            float x = Mathf.LerpAngle(objCurrent.x, objectTargetRotation.x, Time.deltaTime * objectRotateSpeed);
+            float y = Mathf.LerpAngle(objCurrent.y, objectTargetRotation.y, Time.deltaTime * objectRotateSpeed);
+            float objZ = Mathf.LerpAngle(objCurrent.z, objectTargetRotation.z, Time.deltaTime * objectRotateSpeed);
+            objectToRotate.localEulerAngles = new Vector3(x, y, objZ);
+        }
     }
 }

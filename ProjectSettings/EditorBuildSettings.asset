@@ -5,10 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/MainMenu.unity
     guid: 319f15d58a812634b9ffa452198cca5a
   - enabled: 1
+    path: Assets/Scenes/Level 1 copy marisa.unity
+    guid: f7673ff45939d49e48fc88ca65443684
+  - enabled: 0
     path: Assets/Scenes/Level 1 v1.unity
     guid: e7cf23820bed5479194c137c14d418c8
   - enabled: 1

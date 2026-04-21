@@ -1,6 +1,5 @@
-//Eyad Al Raeeini - 02/3/2026
-//mobile first person movement
 using UnityEngine;
+
 public class MobileFirstPerson : MonoBehaviour
 {
     public Transform body;
@@ -11,17 +10,21 @@ public class MobileFirstPerson : MonoBehaviour
 
     private CharacterController cc;
     private float yVel;
+
     private bool holdingForward;
+    private bool holdingBackward;
 
     void Awake()
     {
         cc = GetComponent<CharacterController>();
+
         if (body == null)
             body = transform;
     }
 
     void Update()
     {
+        // Gravity
         if (cc.isGrounded)
         {
             if (yVel < 0)
@@ -33,13 +36,19 @@ public class MobileFirstPerson : MonoBehaviour
         }
 
         Vector3 move = Vector3.zero;
+
+        Vector3 forward = body.forward;
+        forward.y = 0;
+        forward.Normalize();
+
         if (holdingForward)
         {
-            Vector3 forward = body.forward;
-            forward.y = 0;
-            forward.Normalize();
-            move = forward * moveSpeed;
+            move += forward * moveSpeed;
+        }
 
+        if (holdingBackward)
+        {
+            move -= forward * moveSpeed;
         }
 
         cc.Move((move + Vector3.up * yVel) * Time.deltaTime);
@@ -53,7 +62,19 @@ public class MobileFirstPerson : MonoBehaviour
     public void ForwardUp()
     {
         holdingForward = false;
+    }
 
+  
+    public void BackwardDown()
+    {
+        holdingBackward = true;
+
+        body.Rotate(0f, 180f, 0f);
+    }
+
+    public void BackwardUp()
+    {
+        holdingBackward = false;
     }
 
     public void TurnLeft()
