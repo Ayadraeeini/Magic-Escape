@@ -39,6 +39,7 @@ public class MobileFirstPerson : MonoBehaviour
             forward.y = 0;
             forward.Normalize();
             move = forward * moveSpeed;
+
         }
 
         cc.Move((move + Vector3.up * yVel) * Time.deltaTime);
@@ -52,6 +53,7 @@ public class MobileFirstPerson : MonoBehaviour
     public void ForwardUp()
     {
         holdingForward = false;
+
     }
 
     public void TurnLeft()
