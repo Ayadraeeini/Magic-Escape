@@ -14549,6 +14549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 282144598}
   - component: {fileID: 282144597}
+  - component: {fileID: 282144599}
   m_Layer: 0
   m_Name: Decal Projector_4
   m_TagString: Untagged
@@ -14593,12 +14594,40 @@ Transform:
   m_GameObject: {fileID: 282144596}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -76.19, y: 7.11, z: -37.55}
+  m_LocalPosition: {x: -76.63, y: 6.37, z: -37.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!114 &282144599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 282144596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0777d029ed3dffa4692f417d4aba19ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.DecalProjector
+  m_Material: {fileID: 2100000, guid: 8551f2b0394e2485d84d213234cecd01, type: 2}
+  m_DrawDistance: 1000
+  m_FadeScale: 0.9
+  m_StartAngleFade: 180
+  m_EndAngleFade: 180
+  m_UVScale: {x: 1, y: 1}
+  m_UVBias: {x: 0, y: 0}
+  m_RenderingLayerMask:
+    serializedVersion: 0
+    m_Bits: 1
+  m_ScaleMode: 0
+  m_Offset: {x: 0, y: 0, z: 0.5}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_FadeFactor: 1
+  version: 1
+  m_DecalLayerMask: 1
 --- !u!65 &283814915
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108917,8 +108946,20 @@ PrefabInstance:
       value: 0.8773585
       objectReference: {fileID: 0}
     - target: {fileID: 7048833416802466684, guid: 0bbd796f1fde140c78f464eb3d94ff83, type: 3}
+      propertyPath: brushSize
+      value: 60
+      objectReference: {fileID: 0}
+    - target: {fileID: 7048833416802466684, guid: 0bbd796f1fde140c78f464eb3d94ff83, type: 3}
+      propertyPath: textureSize
+      value: 349
+      objectReference: {fileID: 0}
+    - target: {fileID: 7048833416802466684, guid: 0bbd796f1fde140c78f464eb3d94ff83, type: 3}
       propertyPath: minMovePixels
-      value: -0.25
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7048833416802466684, guid: 0bbd796f1fde140c78f464eb3d94ff83, type: 3}
+      propertyPath: brushColor.rgba
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7225246856480638726, guid: 0bbd796f1fde140c78f464eb3d94ff83, type: 3}
       propertyPath: m_IsActive
@@ -112856,7 +112897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2184898001833428092, guid: 8ae7c7be5e988fa46b739a563c0ef0c7, type: 3}
       propertyPath: comboLength
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5278133723143805500, guid: 8ae7c7be5e988fa46b739a563c0ef0c7, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
