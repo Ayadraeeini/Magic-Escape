@@ -68,10 +68,12 @@
     <Compile Include="Assets\scripts\CombatManager.cs" />
     <Compile Include="Assets\scripts\MobileFirstPerson.cs" />
     <Compile Include="Assets\scripts\ObjectiveTriggerText.cs" />
+    <Compile Include="Assets\scripts\DecalHighlight.cs" />
     <Compile Include="Assets\scripts\SwipeMiniGameManager.cs" />
     <Compile Include="Assets\scripts\CombatEncounter.cs" />
     <Compile Include="Assets\scripts\LeverInteractor.cs" />
     <Compile Include="Assets\scripts\UIDrawTrail.cs" />
+    <Compile Include="Assets\scripts\LeverTestReset.cs" />
     <Compile Include="Assets\scripts\ShopGlowArea.cs" />
     <Compile Include="Assets\scripts\ShopPanel.cs" />
     <Compile Include="Assets\scripts\LeverInteractable.cs" />
