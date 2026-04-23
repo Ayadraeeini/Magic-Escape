@@ -63,6 +63,9 @@ Material:
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
-    m_Colors: []
+    - _Emissive_Strength: 3
+    m_Colors:
+    - _base_color: {r: 0, g: 0, b: 0, a: 1}
+    - _emissive_color: {r: 0.95283014, g: 0.95283014, b: 0.95283014, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
