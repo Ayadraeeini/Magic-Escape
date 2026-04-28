@@ -58,12 +58,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Normal_Blend: 0.5
+    - Normal_Blend: -0.74
     - _DecalMeshBiasType: 0
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
-    - _EmissiveStrengh: 1.48
+    - _EmissiveStrengh: 2
     - _Emissive_Strength: 3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}

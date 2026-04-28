@@ -71,7 +71,7 @@ Material:
     - _DecalMeshDepthBias: 0
     - _DecalMeshViewBias: 0
     - _DrawOrder: 0
-    - _EmissiveStrengh: 3
+    - _EmissiveStrengh: 0.98
     - _Emissive_Strength: 3
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
