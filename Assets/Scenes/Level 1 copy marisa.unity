@@ -2238,6 +2238,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -2247,7 +2251,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -4623,6 +4631,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -4632,7 +4644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -7132,6 +7148,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -7141,7 +7161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -14431,6 +14455,10 @@ PrefabInstance:
       value: 3.438
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -14440,7 +14468,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -17038,6 +17070,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -17047,7 +17083,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -18082,6 +18122,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -18091,7 +18135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -23736,6 +23784,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -23745,7 +23797,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -23901,6 +23957,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -23910,7 +23970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -34966,6 +35030,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -34975,7 +35043,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -35256,6 +35328,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -35265,7 +35341,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -36195,6 +36275,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -36204,7 +36288,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -41179,6 +41267,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -41188,7 +41280,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -47025,6 +47121,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -47034,7 +47134,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -49855,6 +49959,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -49864,7 +49972,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -61295,6 +61407,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -61304,7 +61420,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -65141,6 +65261,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -65150,7 +65274,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -67653,6 +67781,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -67662,7 +67794,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -73221,6 +73357,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -73230,7 +73370,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -75906,6 +76050,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -75915,7 +76063,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -76996,6 +77148,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -77005,7 +77161,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -83497,6 +83657,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -83506,7 +83670,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -93398,6 +93566,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -93407,7 +93579,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.rangeCurve.scalar
@@ -93580,6 +93756,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -93589,7 +93769,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -104153,6 +104337,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -104162,7 +104350,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -107141,6 +107333,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -107150,7 +107346,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.intensityCurve.scalar
@@ -107541,6 +107741,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
+      propertyPath: lengthInSec
+      value: 2.52
+      objectReference: {fileID: 0}
+    - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.light
       value: 
       objectReference: {fileID: 643210404}
@@ -107558,7 +107762,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: LightsModule.maxLights
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: CollisionModule.enabled
@@ -107570,7 +107774,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: InitialModule.maxNumParticles
-      value: 1596
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 1738002352255230204, guid: 6d92d9d1c2e65be43af5cc36bcf86639, type: 3}
       propertyPath: InitialModule.startSize.scalar
