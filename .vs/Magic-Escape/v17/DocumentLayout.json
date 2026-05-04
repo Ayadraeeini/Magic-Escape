@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D8A8C15C-2D9F-81F6-03FF-D6340A14C469}|Assembly-CSharp.csproj|c:\\users\\jesse\\desktop\\magicescape\\magic-escape\\assets\\scripts\\enemyminigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8A8C15C-2D9F-81F6-03FF-D6340A14C469}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemyminigametrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D8A8C15C-2D9F-81F6-03FF-D6340A14C469}|Assembly-CSharp.csproj|c:\\users\\jesse\\desktop\\magicescape\\magic-escape\\assets\\scripts\\mobilefirstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D8A8C15C-2D9F-81F6-03FF-D6340A14C469}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mobilefirstperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -27,19 +31,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EnemyMiniGameTrigger.cs",
+              "DocumentMoniker": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\EnemyMiniGameTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\EnemyMiniGameTrigger.cs",
+              "ToolTip": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\EnemyMiniGameTrigger.cs",
+              "RelativeToolTip": "Assets\\scripts\\EnemyMiniGameTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-04T18:05:20.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MobileFirstPerson.cs",
               "DocumentMoniker": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\MobileFirstPerson.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\MobileFirstPerson.cs",
               "ToolTip": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\MobileFirstPerson.cs",
               "RelativeToolTip": "Assets\\scripts\\MobileFirstPerson.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAIBJwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-14T17:57:24.991Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "PauseMenu.cs",
               "DocumentMoniker": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\PauseMenu.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PauseMenu.cs",
@@ -50,7 +67,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "MainMenu.cs",
               "DocumentMoniker": "C:\\Users\\jesse\\Desktop\\MagicEscape\\Magic-Escape\\Assets\\scripts\\MainMenu.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\MainMenu.cs",
