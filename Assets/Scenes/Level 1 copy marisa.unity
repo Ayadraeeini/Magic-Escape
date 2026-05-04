@@ -54264,7 +54264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3515986644512405878, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
       propertyPath: moveSpeed
-      value: 2.05
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3515986644512405878, guid: 50b94fdc3ae9c2845bcb42af304a3ccb, type: 3}
       propertyPath: turnAngle
