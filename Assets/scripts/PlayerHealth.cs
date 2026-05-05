@@ -1,10 +1,12 @@
-//Eyad Al Raeeini - 02/17/2026
+//Eyad Al Raeeini - 05/02/2026
 //player health system
 using UnityEngine;
+
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;
     public int currentHealth;
+    public HeartUIController healthUI;
 
     void Awake()
     {
@@ -13,15 +15,14 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
-        currentHealth -= amount;
-        if (currentHealth < 0)
-            currentHealth = 0;
+        currentHealth = Mathf.Max(0, currentHealth - amount);
+
+        if (healthUI != null)
+            healthUI.OnTakeDamage();
     }
 
     public void Heal(int amount)
     {
-        currentHealth += amount;
-        if (currentHealth > maxHealth)
-            currentHealth = maxHealth;
+        currentHealth = Mathf.Min(maxHealth, currentHealth + amount);
     }
 }
