@@ -1,7 +1,8 @@
 //Eyad Al Raeeini - 05/06/2026
-//player health system with game over
+//player health system with delayed game over
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -29,12 +30,18 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             dead = true;
-            SceneManager.LoadScene(gameOverSceneName);
+            StartCoroutine(GameOverDelay());
         }
     }
 
     public void Heal(int amount)
     {
         currentHealth = Mathf.Min(maxHealth, currentHealth + amount);
+    }
+
+    IEnumerator GameOverDelay()
+    {
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(gameOverSceneName);
     }
 }
