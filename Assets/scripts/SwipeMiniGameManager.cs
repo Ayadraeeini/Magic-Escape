@@ -298,16 +298,15 @@ public class SwipeMiniGameManager : MonoBehaviour
         if (currentEnemy == null)
             yield break;
 
-        Collider c = currentEnemy.GetComponent<Collider>();
+        EnemyMiniGameTrigger trigger =
+            currentEnemy.GetComponent<EnemyMiniGameTrigger>();
 
-        if (c == null)
+        if (trigger == null)
             yield break;
-
-        c.enabled = false;
 
         yield return new WaitForSeconds(1f);
 
-        c.enabled = true;
+        trigger.ResetTrigger();
     }
 
     IEnumerator EndMiniGameAfter(float delay)
