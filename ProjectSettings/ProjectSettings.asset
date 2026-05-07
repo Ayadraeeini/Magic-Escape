@@ -146,6 +146,8 @@ PlayerSettings:
   bundleVersion: 0.1.1
   preloadedAssets:
   - {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
+  - {fileID: -4125786501772964772, guid: 5c67685d7cb1f8247b17046384a5a47f, type: 2}
+  - {fileID: 11400000, guid: dfcc756565e922f42a52a1055286ff23, type: 2}
   metroInputSource: 0
   wsaTransparentSwapchain: 0
   m_HolographicPauseOnTrackingLoss: 1
@@ -270,7 +272,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 2
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/eyadr/Desktop/MagicaEscape/TeamKey.keystore
+  AndroidKeystoreName: C:/Users/jesse/Downloads/MagicaEscape_Keystore/MagicaEscape/TeamKey.keystore
   AndroidKeyaliasName: magicakey
   AndroidEnableArmv9SecurityFeatures: 0
   AndroidEnableArm64MTE: 0
@@ -918,7 +920,13 @@ PlayerSettings:
   XboxOneOverrideIdentityName: 
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    Build: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -940,11 +948,11 @@ PlayerSettings:
   captureStartupLogs: {}
   activeInputHandler: 1
   windowsGamepadBackendHint: 0
-  cloudProjectId: ea895748-ac3f-496a-a0de-bdfd001e925d
+  cloudProjectId: a19977ad-6aa1-436e-924d-8ee4b9acdfcb
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: My project 2026-02-07_12-55-55
-  organizationId: unity_666e7ae57007487044ba
+  projectName: Magica Escape (2)
+  organizationId: janason
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   hmiLoadingImage: {fileID: 0}

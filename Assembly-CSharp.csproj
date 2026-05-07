@@ -77,6 +77,7 @@
     <Compile Include="Assets\scripts\ShopGlowArea.cs" />
     <Compile Include="Assets\scripts\HealthUIController.cs" />
     <Compile Include="Assets\scripts\ShopPanel.cs" />
+    <Compile Include="Assets\scripts\EscapeKeyPickup.cs" />
     <Compile Include="Assets\scripts\LeverInteractable.cs" />
     <Compile Include="Assets\scripts\ColorCycle.cs" />
     <Compile Include="Assets\scripts\SwipeTrailDrawer.cs" />
@@ -89,6 +90,7 @@
     <Compile Include="Assets\scripts\ChestAutoOpen.cs" />
     <Compile Include="Assets\scripts\ShopTrigger.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
+    <Compile Include="Assets\scripts\EscapeDoorManager.cs" />
     <Compile Include="Assets\scripts\Continue.cs" />
     <Compile Include="Assets\scripts\KeyPickup.cs" />
     <Compile Include="Assets\scripts\ConstantRotate.cs" />
