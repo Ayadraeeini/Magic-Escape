@@ -1,5 +1,5 @@
 ﻿//Eyad Al Raeeini - 02/17/2026
-//swipe minigame manager with retries and new combo
+//swipe minigame manager with retries, damage, pushback, and fail sound
 
 using System.Collections;
 using System.Collections.Generic;
@@ -12,30 +12,48 @@ public class SwipeMiniGameManager : MonoBehaviour
     public static SwipeMiniGameManager Instance;
 
     public GameObject miniGamePanel;
+
     public TMP_Text comboText;
     public TMP_Text timerText;
     public TMP_Text resultText;
+
     public UIDrawTrail uiTrail;
+
     public float minSwipeDistance = 80f;
     public float showComboSeconds = 5f;
+
     public int maxAttempts = 3;
-    public int damageOnFail = 10;
+    public int damageOnFail = 20;
+
     public MonoBehaviour playerMovementScript;
+
     public Transform cameraToShake;
     public float shakeDuration = 0.18f;
     public float shakeStrength = 0.12f;
 
+    public float pushBackForce = 3f;
+
+    public AudioSource audioSource;
+    public AudioClip failSound;
+
     private GameObject currentEnemy;
+    private GameObject currentPlayer;
+
     private PlayerHealth playerHealth;
     private HUDManager playerHUD;
+
     private List<Direction> combo;
     private List<Direction> playerInput;
+
     private bool inputEnabled;
     private bool miniGameRunning;
+
     private Vector2 swipeStart;
+
     private int attemptsLeft;
-    private int damageOnFailCached;
+
     private MonoBehaviour cachedMovement;
+
     private Vector3 camStartLocalPos;
 
     void Awake()
@@ -54,15 +72,18 @@ public class SwipeMiniGameManager : MonoBehaviour
 
     public void StartMiniGame(GameObject enemy, GameObject player, int comboLength, int damage)
     {
-        if (miniGameRunning) return;
+        if (miniGameRunning)
+            return;
+
         miniGameRunning = true;
 
         currentEnemy = enemy;
-        damageOnFailCached = damage;
+        currentPlayer = player;
 
         playerHealth = player.GetComponent<PlayerHealth>();
 
         playerHUD = FindObjectOfType<HUDManager>();
+
         if (playerHUD != null)
             playerHUD.ShowHP();
 
@@ -70,9 +91,11 @@ public class SwipeMiniGameManager : MonoBehaviour
             comboLength = 1;
 
         combo = GenerateCombo(comboLength);
+
         playerInput = new List<Direction>();
 
         attemptsLeft = maxAttempts;
+
         if (attemptsLeft < 1)
             attemptsLeft = 1;
 
@@ -80,12 +103,16 @@ public class SwipeMiniGameManager : MonoBehaviour
 
         if (miniGamePanel != null)
             miniGamePanel.SetActive(true);
+
         if (resultText != null)
             resultText.text = "";
+
         if (timerText != null)
             timerText.text = "Memorize";
+
         if (comboText != null)
             comboText.text = "";
+
         if (uiTrail != null)
             uiTrail.Clear();
 
@@ -103,6 +130,7 @@ public class SwipeMiniGameManager : MonoBehaviour
             timerText.text = "Memorize";
 
         int count = combo.Count;
+
         if (count < 1)
             count = 1;
 
@@ -111,11 +139,13 @@ public class SwipeMiniGameManager : MonoBehaviour
         for (int i = 0; i < combo.Count; i++)
         {
             comboText.text = "";
+
             yield return new WaitForSecondsRealtime(0.05f);
 
             comboText.text = DirectionToArrow(combo[i]);
 
             float remaining = delayBetweenArrows - 0.05f;
+
             if (remaining < 0.05f)
                 remaining = 0.05f;
 
@@ -125,6 +155,7 @@ public class SwipeMiniGameManager : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.2f);
 
         comboText.text = "";
+
         if (timerText != null)
             timerText.text = "Swipe Now!";
 
@@ -133,11 +164,17 @@ public class SwipeMiniGameManager : MonoBehaviour
 
     void Update()
     {
-        if (!miniGameRunning) return;
-        if (miniGamePanel == null || !miniGamePanel.activeSelf) return;
-        if (!inputEnabled) return;
+        if (!miniGameRunning)
+            return;
 
-        if (Pointer.current == null) return;
+        if (miniGamePanel == null || !miniGamePanel.activeSelf)
+            return;
+
+        if (!inputEnabled)
+            return;
+
+        if (Pointer.current == null)
+            return;
 
         Vector2 pos = Pointer.current.position.ReadValue();
 
@@ -158,14 +195,18 @@ public class SwipeMiniGameManager : MonoBehaviour
                 uiTrail.End();
 
             Vector2 delta = pos - swipeStart;
-            if (delta.magnitude < minSwipeDistance) return;
+
+            if (delta.magnitude < minSwipeDistance)
+                return;
 
             Direction dir = GetDirection(delta);
+
             playerInput.Add(dir);
 
             if (playerInput.Count >= combo.Count)
             {
                 inputEnabled = false;
+
                 EvaluateAttempt();
             }
         }
@@ -193,11 +234,16 @@ public class SwipeMiniGameManager : MonoBehaviour
                 Destroy(currentEnemy);
 
             StartCoroutine(EndMiniGameAfter(0.6f));
+
             return;
         }
 
         attemptsLeft--;
+
         ShakeScreen();
+
+        if (playerHealth != null)
+            playerHealth.TakeDamage(damageOnFail);
 
         if (attemptsLeft > 0)
         {
@@ -211,12 +257,12 @@ public class SwipeMiniGameManager : MonoBehaviour
             if (resultText != null)
                 resultText.text = "FAILED";
 
-            int dmg = damageOnFailCached;
-            if (dmg <= 0)
-                dmg = damageOnFail;
+            if (audioSource != null && failSound != null)
+                audioSource.PlayOneShot(failSound);
 
-            if (playerHealth != null)
-                playerHealth.TakeDamage(dmg);
+            PushPlayerBack();
+
+            StartCoroutine(ResetEnemyTrigger());
 
             StartCoroutine(EndMiniGameAfter(0.8f));
         }
@@ -231,17 +277,37 @@ public class SwipeMiniGameManager : MonoBehaviour
         combo = GenerateCombo(combo.Count);
 
         playerInput.Clear();
+
         if (uiTrail != null)
             uiTrail.Clear();
 
         if (resultText != null)
             resultText.text = "";
+
         if (timerText != null)
             timerText.text = "Memorize";
+
         if (comboText != null)
             comboText.text = "";
 
         StartCoroutine(ShowComboThenPlay());
+    }
+
+    IEnumerator ResetEnemyTrigger()
+    {
+        if (currentEnemy == null)
+            yield break;
+
+        Collider c = currentEnemy.GetComponent<Collider>();
+
+        if (c == null)
+            yield break;
+
+        c.enabled = false;
+
+        yield return new WaitForSeconds(1f);
+
+        c.enabled = true;
     }
 
     IEnumerator EndMiniGameAfter(float delay)
@@ -250,6 +316,7 @@ public class SwipeMiniGameManager : MonoBehaviour
 
         if (miniGamePanel != null)
             miniGamePanel.SetActive(false);
+
         if (uiTrail != null)
             uiTrail.Clear();
 
@@ -259,6 +326,7 @@ public class SwipeMiniGameManager : MonoBehaviour
             playerHUD.HideHP();
 
         inputEnabled = false;
+
         miniGameRunning = false;
     }
 
@@ -271,6 +339,7 @@ public class SwipeMiniGameManager : MonoBehaviour
         }
 
         cachedMovement = player.GetComponent<MobileFirstPerson>();
+
         if (cachedMovement != null)
             cachedMovement.enabled = false;
     }
@@ -289,9 +358,26 @@ public class SwipeMiniGameManager : MonoBehaviour
         cachedMovement = null;
     }
 
+    void PushPlayerBack()
+    {
+        if (currentPlayer == null)
+            return;
+
+        CharacterController cc =
+            currentPlayer.GetComponent<CharacterController>();
+
+        if (cc == null)
+            return;
+
+        Vector3 pushDir = -currentPlayer.transform.forward;
+
+        cc.Move(pushDir * pushBackForce);
+    }
+
     void ShakeScreen()
     {
-        if (cameraToShake == null) return;
+        if (cameraToShake == null)
+            return;
 
         StartCoroutine(ShakeRoutine());
     }
@@ -304,12 +390,17 @@ public class SwipeMiniGameManager : MonoBehaviour
         camStartLocalPos = cameraToShake.localPosition;
 
         float t = shakeDuration;
+
         while (t > 0f)
         {
-            Vector2 r = Random.insideUnitCircle * shakeStrength;
-            cameraToShake.localPosition = camStartLocalPos + new Vector3(r.x, r.y, 0f);
+            Vector2 r =
+                Random.insideUnitCircle * shakeStrength;
+
+            cameraToShake.localPosition =
+                camStartLocalPos + new Vector3(r.x, r.y, 0f);
 
             t -= Time.unscaledDeltaTime;
+
             yield return null;
         }
 
@@ -319,10 +410,12 @@ public class SwipeMiniGameManager : MonoBehaviour
     List<Direction> GenerateCombo(int length)
     {
         List<Direction> list = new List<Direction>();
+
         for (int i = 0; i < length; i++)
         {
             list.Add((Direction)Random.Range(0, 4));
         }
+
         return list;
     }
 
@@ -348,12 +441,16 @@ public class SwipeMiniGameManager : MonoBehaviour
     {
         if (d == Direction.Up)
             return "↑";
+
         if (d == Direction.Down)
             return "↓";
+
         if (d == Direction.Left)
             return "←";
+
         if (d == Direction.Right)
             return "→";
+
         return "?";
     }
 }
