@@ -85,6 +85,7 @@
     <Compile Include="Assets\scripts\PlayerShield.cs" />
     <Compile Include="Assets\scripts\PauseMenuController.cs" />
     <Compile Include="Assets\scripts\CombatSequenceUI.cs" />
+    <Compile Include="Assets\scripts\MovingSpike.cs" />
     <Compile Include="Assets\scripts\ChestAutoOpen.cs" />
     <Compile Include="Assets\scripts\ShopTrigger.cs" />
     <Compile Include="Assets\TutorialInfo\Scripts\Readme.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Assets\scripts\ShopUI.cs" />
     <Compile Include="Assets\scripts\PlayerGold.cs" />
     <Compile Include="Assets\scripts\TutorialPopupSequence.cs" />
+    <Compile Include="Assets\scripts\RestartButton.cs" />
     <Compile Include="Assets\scripts\HoldButton.cs" />
     <Compile Include="Assets\scripts\WinScreenUI.cs" />
   </ItemGroup>
